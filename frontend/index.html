@@ -1,0 +1,435 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NEOcortex AI | Student Success Platform</title>
+
+    <meta name="description"
+          content="NEOcortex AI helps South African learners navigate education, bursaries and career opportunities.">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app-shell">
+
+    <!-- SIDEBAR -->
+
+    <aside class="sidebar">
+
+        <div class="brand">
+            <div class="brand-icon">N</div>
+            <div>
+                <h2>NEOcortex</h2>
+                <span>ARTIFICIAL INTELLIGENCE</span>
+            </div>
+        </div>
+
+        <div class="nav-label">WORKSPACE</div>
+
+        <nav class="navigation">
+
+            <button class="nav-item active"
+                    data-section="dashboard">
+                <span>◫</span> Dashboard
+            </button>
+
+            <button class="nav-item"
+                    data-section="assistant">
+                <span>✧</span> AI Assistant
+            </button>
+
+            <button class="nav-item"
+                    data-section="bursaries">
+                <span>◇</span> Bursary Navigator
+            </button>
+
+            <button class="nav-item"
+                    data-section="checklist">
+                <span>☑</span> My Checklist
+            </button>
+
+            <button class="nav-item"
+                    data-section="careers">
+                <span>↗</span> Career Guide
+            </button>
+
+        </nav>
+
+        <div class="sidebar-bottom">
+            <div class="help-card">
+                <div class="help-icon">✦</div>
+                <h3>Your future starts here.</h3>
+                <p>Get guidance for your education journey.</p>
+                <button id="help-button">Explore AI Assistant</button>
+            </div>
+
+            <div class="sidebar-footer">
+                NEOcortex AI · Student Edition
+            </div>
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN CONTENT -->
+
+    <main class="main-content">
+
+        <header class="topbar">
+
+            <div>
+                <div class="breadcrumb">Workspace / <span id="breadcrumb-name">Dashboard</span></div>
+                <h2 id="page-heading">Student Dashboard</h2>
+            </div>
+
+            <div class="topbar-right">
+                <span class="status-dot"></span>
+                <span class="status-text">Prototype environment</span>
+                <div class="avatar">S</div>
+            </div>
+
+        </header>
+
+
+        <!-- DASHBOARD -->
+
+        <section id="dashboard" class="page active-page">
+
+            <div class="welcome-banner">
+                <div>
+                    <span class="eyebrow">YOUR STUDENT SUCCESS HUB</span>
+                    <h1>Build your future with <span>confidence.</span></h1>
+                    <p>
+                        Find funding, understand applications and explore
+                        your future with intelligent student support.
+                    </p>
+
+                    <button class="primary-button"
+                            data-go="assistant">
+                        Ask NEOcortex AI →
+                    </button>
+                </div>
+
+                <div class="welcome-visual">
+                    <div class="orb">N</div>
+                    <span>INTELLIGENCE FOR YOUR FUTURE</span>
+                </div>
+            </div>
+
+
+            <div class="section-heading">
+                <div>
+                    <h2>Your workspace</h2>
+                    <p>Everything you need to move forward.</p>
+                </div>
+            </div>
+
+
+            <div class="stats-grid">
+
+                <article class="stat-card">
+                    <div class="stat-icon blue">◇</div>
+                    <p>Funding opportunities</p>
+                    <h2 id="opportunity-count">Loading...</h2>
+                    <span>In our prototype dataset</span>
+                </article>
+
+                <article class="stat-card">
+                    <div class="stat-icon purple">☑</div>
+                    <p>Checklist progress</p>
+                    <h2 id="checklist-count">0%</h2>
+                    <span>Documents completed</span>
+                </article>
+
+                <article class="stat-card">
+                    <div class="stat-icon green">↗</div>
+                    <p>Career pathways</p>
+                    <h2>6</h2>
+                    <span>Explore potential careers</span>
+                </article>
+
+            </div>
+
+
+            <div class="section-heading">
+                <div>
+                    <h2>Explore your tools</h2>
+                    <p>Choose where you want to start.</p>
+                </div>
+            </div>
+
+
+            <div class="tools-grid">
+
+                <article class="tool-card">
+                    <div class="tool-icon blue">✧</div>
+                    <h3>AI Student Assistant</h3>
+                    <p>Get guidance about education, funding and applications.</p>
+                    <button data-go="assistant">Open assistant →</button>
+                </article>
+
+                <article class="tool-card">
+                    <div class="tool-icon purple">◇</div>
+                    <h3>Bursary Navigator</h3>
+                    <p>Discover opportunities that match your study interests.</p>
+                    <button data-go="bursaries">Find opportunities →</button>
+                </article>
+
+                <article class="tool-card">
+                    <div class="tool-icon green">☑</div>
+                    <h3>Application Checklist</h3>
+                    <p>Organize your application preparation.</p>
+                    <button data-go="checklist">Open checklist →</button>
+                </article>
+
+                <article class="tool-card">
+                    <div class="tool-icon orange">↗</div>
+                    <h3>Career Guide</h3>
+                    <p>Explore potential careers and qualifications.</p>
+                    <button data-go="careers">Explore careers →</button>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- AI ASSISTANT -->
+
+        <section id="assistant" class="page">
+
+            <div class="section-heading">
+                <div>
+                    <h2>AI Student Assistant</h2>
+                    <p>Your intelligent education support companion.</p>
+                </div>
+                <span class="prototype-tag">DAY 1 DEMO MODE</span>
+            </div>
+
+            <div class="chat-layout">
+
+                <div class="chat-card">
+
+                    <div class="chat-header">
+                        <div class="bot-avatar">N</div>
+                        <div>
+                            <h3>NEOcortex Assistant</h3>
+                            <span>Student support prototype</span>
+                        </div>
+                    </div>
+
+                    <div id="chat-messages" class="chat-messages">
+
+                        <div class="message bot-message">
+                            <strong>Hello! I'm NEOcortex AI.</strong>
+                            <p>
+                                I can help you explore educational funding,
+                                application preparation and career pathways.
+                            </p>
+                            <p>What would you like to learn today?</p>
+                        </div>
+
+                    </div>
+
+                    <div class="suggestion-area">
+                        <button class="suggestion"
+                                data-question="What is NSFAS?">
+                            What is NSFAS?
+                        </button>
+
+                        <button class="suggestion"
+                                data-question="What documents are generally needed for bursary applications?">
+                            Application documents
+                        </button>
+
+                        <button class="suggestion"
+                                data-question="What careers can I explore in cloud computing?">
+                            Cloud computing careers
+                        </button>
+                    </div>
+
+                    <form id="chat-form" class="chat-input-area">
+
+                        <input
+                            type="text"
+                            id="chat-input"
+                            placeholder="Ask NEOcortex a question..."
+                            maxlength="1000"
+                            required
+                        >
+
+                        <button type="submit">Send →</button>
+
+                    </form>
+
+                    <p class="demo-notice">
+                        Day 1: Demonstration responses only.
+                        AWS AI integration is scheduled for Day 2.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- BURSARIES -->
+
+        <section id="bursaries" class="page">
+
+            <div class="section-heading">
+                <div>
+                    <h2>Bursary Navigator</h2>
+                    <p>Explore funding opportunities by study field.</p>
+                </div>
+            </div>
+
+            <div class="filter-card">
+
+                <label for="study-field">Select your study field</label>
+
+                <select id="study-field">
+                    <option value="all">All study fields</option>
+                    <option value="Information Technology">Information Technology</option>
+                    <option value="Engineering">Engineering</option>
+                    <option value="Accounting">Accounting</option>
+                    <option value="Health Sciences">Health Sciences</option>
+                </select>
+
+                <button id="find-bursaries" class="primary-button">
+                    Find opportunities
+                </button>
+
+            </div>
+
+            <div id="bursary-results" class="results-grid"></div>
+
+            <p class="demo-notice">
+                Listings marked as demonstration data are not real funding offers.
+                Always verify requirements with official providers.
+            </p>
+
+        </section>
+
+
+        <!-- CHECKLIST -->
+
+        <section id="checklist" class="page">
+
+            <div class="section-heading">
+                <div>
+                    <h2>My Application Checklist</h2>
+                    <p>Track the documents you have prepared.</p>
+                </div>
+            </div>
+
+            <div class="checklist-card">
+
+                <div class="progress-header">
+                    <div>
+                        <h3>Application preparation</h3>
+                        <p>Example general document checklist.</p>
+                    </div>
+
+                    <strong id="progress-percent">0%</strong>
+                </div>
+
+                <div class="progress-track">
+                    <div id="progress-bar" class="progress-fill"></div>
+                </div>
+
+                <div id="checklist-items"></div>
+
+                <button id="reset-checklist" class="secondary-button">
+                    Reset checklist
+                </button>
+
+            </div>
+
+            <p class="demo-notice">
+                Requirements vary by funding provider. This is a general
+                preparation checklist, not an official application requirement.
+            </p>
+
+        </section>
+
+
+        <!-- CAREERS -->
+
+        <section id="careers" class="page">
+
+            <div class="section-heading">
+                <div>
+                    <h2>Career Guide</h2>
+                    <p>Discover possible pathways for your future.</p>
+                </div>
+            </div>
+
+            <div class="career-grid">
+
+                <article class="career-card">
+                    <span>☁</span>
+                    <h3>Cloud Engineer</h3>
+                    <p>Designs and manages cloud infrastructure.</p>
+                    <small>Cloud · Networking · Automation</small>
+                </article>
+
+                <article class="career-card">
+                    <span>⌘</span>
+                    <h3>Software Developer</h3>
+                    <p>Creates software and digital applications.</p>
+                    <small>Programming · Development</small>
+                </article>
+
+                <article class="career-card">
+                    <span>♙</span>
+                    <h3>Cybersecurity Analyst</h3>
+                    <p>Protects systems, applications and data.</p>
+                    <small>Security · Risk · Monitoring</small>
+                </article>
+
+                <article class="career-card">
+                    <span>◈</span>
+                    <h3>Data Analyst</h3>
+                    <p>Uses data to identify patterns and insights.</p>
+                    <small>Data · SQL · Analytics</small>
+                </article>
+
+                <article class="career-card">
+                    <span>✧</span>
+                    <h3>AI Engineer</h3>
+                    <p>Develops and integrates intelligent systems.</p>
+                    <small>AI · Python · Machine Learning</small>
+                </article>
+
+                <article class="career-card">
+                    <span>⌘</span>
+                    <h3>Network Engineer</h3>
+                    <p>Designs and maintains computer networks.</p>
+                    <small>Networking · Infrastructure</small>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <footer class="main-footer">
+            NEOcortex AI · Empowering South African learners.
+            <span>Student support prototype · 2026</span>
+        </footer>
+
+    </main>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>

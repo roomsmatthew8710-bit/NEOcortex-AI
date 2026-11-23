@@ -1,0 +1,66 @@
+
+[
+  {
+    "id": "DEMO001",
+    "name": "Technology Education Opportunity",
+    "provider": "Demonstration Provider",
+    "study_fields": [
+      "Information Technology"
+    ],
+    "study_level": "Undergraduate",
+    "closing_date": null,
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": "DEMO002",
+    "name": "Engineering Education Opportunity",
+    "provider": "Demonstration Provider",
+    "study_fields": [
+      "Engineering"
+    ],
+    "study_level": "Undergraduate",
+    "closing_date": null,
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": "DEMO003",
+    "name": "Accounting Education Opportunity",
+    "provider": "Demonstration Provider",
+    "study_fields": [
+      "Accounting"
+    ],
+    "study_level": "Undergraduate",
+    "closing_date": null,
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": "DEMO004",
+    "name": "Health Sciences Education Opportunity",
+    "provider": "Demonstration Provider",
+    "study_fields": [
+      "Health Sciences"
+    ],
+    "study_level": "Undergraduate",
+    "closing_date": null,
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": "DEMO005",
+    "name": "General Student Support Opportunity",
+    "provider": "Demonstration Provider",
+    "study_fields": [
+      "Information Technology",
+      "Engineering",
+      "Accounting",
+      "Health Sciences"
+    ],
+    "study_level": "Undergraduate",
+    "closing_date": null,
+    "verified": false,
+    "source": ""
+  }
+]
